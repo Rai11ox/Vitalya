@@ -1,0 +1,152 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  color: #2b2727;
+  line-height: 1.5;
+  font-size: 1rem;
+  overflow-x: hidden;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 7px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  background: radial-gradient(rgb(204, 204, 7), rgb(148, 235, 48));
+}
+.logo{
+  width: 140px;
+  height: 100px;
+}
+
+.menu {
+  list-style-type: none;
+  padding: 0;
+}
+
+.menu li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.menu li a {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #fff;
+  text-decoration: none;
+  background-color: DarkSlateGrey;
+  border-radius: 50px;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+
+.menu li a:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.3);
+  transition: width 0.3s;
+  border-radius: 50px;
+}
+
+.menu li a:hover {
+  color: #333;
+}
+
+.menu li a:hover:before {
+  width: 100%;
+}
+.slider {
+  position: relative;
+}
+
+.slider-container {
+  display: flex;
+  overflow: hidden;
+  width: 300%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slider-container img {
+  flex-shrink: 0;
+  width: 33.33%;
+  height: 500px;
+  object-fit: cover;
+  border: 10px solid #ccc;
+  border-radius: 7%;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.slider-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.slider-arrow {
+  
+  cursor: pointer;
+  font-size: 15px;
+  padding: 5px;
+  border-radius: 50%;
+  background-color: #252323;
+  color: #dad5d5;
+  margin: 0 5px;
+}
+.footer-wrap{
+  padding: 10px 10px;
+  background: #585757;
+}
+.footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 2rem;
+}
+.under{
+  padding: 50px 20px;
+}
+.name{
+  font-size: 3rem;
+  font-weight: 600;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  margin-bottom: 80px;
+}
+.under{
+  padding: 50px 0;
+}
+
+.block-item{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+.block-img{
+  width: 47%;
+  
+  text-align: center;
+}
+.block-text{
+  width: 50%;
+}
+
+.block-text {
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 2.75rem;
+  padding: 50px;
+}
